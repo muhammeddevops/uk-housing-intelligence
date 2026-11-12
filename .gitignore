@@ -8,3 +8,5 @@ __pycache__/
 # LibreOffice lock files
 .~lock.*#
 
+data/
+

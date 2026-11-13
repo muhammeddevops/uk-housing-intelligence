@@ -1,8 +1,9 @@
 from pathlib import Path
 
-import pandas as pd 
+import pandas as pd
 
 from housing.ingestion.uk_hpi import extract_uk_hpi_indices
+
 
 def test_extract_uk_hpi_indices():
     source_path = Path("data/uk_house_price_index.xlsx")

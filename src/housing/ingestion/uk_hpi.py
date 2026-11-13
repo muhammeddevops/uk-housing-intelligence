@@ -2,7 +2,6 @@ from pathlib import Path
 
 import pandas as pd
 
-
 UK_HPI_INDEX_SHEET = "1"
 UK_HPI_HEADER_ROW = 2
 

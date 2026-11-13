@@ -1,6 +1,9 @@
 # Python environments
 .venv/
 __pycache__/
+.pytest_cache/
+*.py[cod]
+*.egg-info/
 
 # Environment variables
 .env
@@ -8,5 +11,13 @@ __pycache__/
 # LibreOffice lock files
 .~lock.*#
 
-data/
+# Testing and linting
+.pytest_cache/
+.coverage
+htmlcov/
+.ruff_cache/
+
+# Data
+data/raw/*
+data/processed/*
 

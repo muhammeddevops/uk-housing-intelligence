@@ -15,7 +15,7 @@ def transform_uk_hpi_indices(raw_df: pd.DataFrame) -> pd.DataFrame:
     # Convert the period into a datetime value.
     df["reference_date"] = pd.to_datetime(
         period_parts["period"],
-        format="%b %Y",
+        format="mixed",
     )
 
     # Convert revision markers into descriptive statuses.

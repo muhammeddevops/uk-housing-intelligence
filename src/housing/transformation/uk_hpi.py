@@ -8,7 +8,7 @@ def transform_uk_hpi_indices(raw_df: pd.DataFrame) -> pd.DataFrame:
     df = raw_df.copy()
 
     # Extract the reference period and revision marker.
-    period_parts = df["Time period"].str.extract(
+    period_parts = df["Time period"].astype(str).str.extract(
         r"^(?P<period>.+?)(?:\s*\[(?P<marker>[pr])\])?$"
     )
 

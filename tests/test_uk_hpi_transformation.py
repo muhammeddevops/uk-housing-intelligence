@@ -1,7 +1,5 @@
 import pandas as pd
-from pathlib import Path
 
-from housing.ingestion.uk_hpi import extract_uk_hpi_indices
 from housing.transformation.uk_hpi import transform_uk_hpi_indices
 
 def test_transform_uk_hpi_indices():

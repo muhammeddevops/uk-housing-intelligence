@@ -17,7 +17,15 @@ __pycache__/
 htmlcov/
 .ruff_cache/
 
-# Data
-data/raw/*
-data/processed/*
+# Data files
+data/bronze/*
+data/silver/*
+data/gold/*
 
+# Preserve data directory structure
+!data/bronze/uk_hpi/
+!data/bronze/uk_hpi/.gitkeep
+!data/silver/uk_hpi/
+!data/silver/uk_hpi/.gitkeep
+!data/gold/
+!data/gold/.gitkeep

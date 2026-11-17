@@ -3,6 +3,7 @@ import pandas as pd
 from housing.ingestion.uk_hpi import extract_uk_hpi_indices
 from housing.transformation.uk_hpi import transform_uk_hpi_indices
 
+
 def test_transform_uk_hpi_indices_data_quality(tmp_path):
 
     source_path = tmp_path / "uk_house_price_index.xlsx"

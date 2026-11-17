@@ -2,6 +2,7 @@ import pandas as pd
 
 from housing.transformation.uk_hpi import transform_uk_hpi_indices
 
+
 def test_transform_uk_hpi_indices():
     raw_df = pd.DataFrame(
         {

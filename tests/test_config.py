@@ -11,8 +11,9 @@ def test_project_root():
 
 def test_data_directories():
     assert config.DATA_DIR == config.PROJECT_ROOT / "data"
-    assert config.RAW_DATA_DIR == config.DATA_DIR / "raw"
-    assert config.PROCESSED_DATA_DIR == config.DATA_DIR / "processed"
+    assert config.BRONZE_DATA_DIR == config.DATA_DIR / "bronze"
+    assert config.SILVER_DATA_DIR == config.DATA_DIR / "silver"
+    assert config.GOLD_DATA_DIR == config.DATA_DIR / "gold"
 
 
 def test_default_database_settings(monkeypatch):
